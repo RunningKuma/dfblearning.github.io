@@ -1,53 +1,143 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>观鸟网</title>
-    <link href="https://fonts.googleapis.com/css?family=Long+Cang" rel="stylesheet">
-    <link href="assert/style.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
 
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
   <body>
     <header>
-    <h1>观鸟网</h1>
-    <img src="assert/dove.png" alt="一张鸽子剪影图片">
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+          <img src="originals/firefox_logo-only_RGB.png" alt="Firefox logo">
+
     </header>
 
-  <nav>
-    <ul>
-      <li><span>主页</span></li>
-      <li><a href="#">开始</a></li>
-      <li><a href="#">图片</a></li>
-      <li><a href="#">设备</a></li>
-      <li><a href="#">论坛</a></li>
-    </ul>
-  </nav>
-  <main>
-<section>
-      <h2>欢迎</h2>
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=3303261&bvid=BV1rs411d7hC&cid=5221343&p=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <h2>Rocking the free web</h2>
 
-      <p>欢迎访问观鸟网虚拟站点。如果这是一个真实的网站，那么它就是观鸟爱好者的理想聚集地。无论你是一名期望学习观鸟知识的新手，还是一位希望分享体会、经验和图片的观鸟老手。</p>
-      <p>时不我待！赶快带齐装备，关上电脑，去拥抱美丽的大自然吧！</p>
-      <p>我们还有另外一个页面:<a href="avemujica.html" title="母鸡卡">Avemujica</a></p>
-</section>
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
-    <aside>
-      <h2>收藏照片</h2>
-    
-      <a href="assert/favorite-1.jpg"><img src="assert/favorite-1.jpg" alt="一只体型小巧的鸟，羽毛蓝绿色，爪黑白相间，黑色的喙细且锋利。点击缩略图查看完整照片。"></a>
-      <a href="assert/favorite-2.jpg"><img src="assert/favorite-2_th.jpg" alt="一只美丽的孔雀的上半身图片，它的颈上覆盖蓝色的羽毛，有浅色的喙和蓝色的冠。点击缩略图查看完整照片。"></a>
-      <a href="assert/favorite-3.jpg"><img src="assert/favorite-3_th.jpg" alt="一只大鸟的上半身图片，羽毛白色，浅色的喙细长而弯曲。点击缩略图查看完整照片。"></a>
-      <a href="assert/favorite-4.jpg"><img src="assert/favorite-4_th.jpg" alt="一只成年鹈鹕，羽毛大多为白色，背部和腹部有少许黑色羽毛，又长又直的喙呈黄色，喙的下方有一个喉囊可以暂时储存食物。点击缩略图查看完整照片。"></a>
-    </aside>
-  </main>
-      <footer>
-      <p>本虚拟站点遵守 CC0 协议，所有内容均可任意修改和复用。原始版本由 Chris Mills 于 2016 年编写。Roy Tian 于 2019 年汉化。</p>
-      <p><a href="http://game-icons.net/lorc/originals/dove.html">鸽子图标</a> 由 Lorc 绘制。</p>
-      </footer>
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
 
-</body>
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img src="originals/firefox_logo-only_RGB.png" alt="Firefox logo" width="400">
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img src="originals/mozilla-dinosaur-head.png" alt="mozilla logo" width="400">
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img src="originals/firefox-addons.jpg" alt="Firefox addons" width="400"> 
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img src="originals/mdn.svg" alt="Mozilla Developer Network" width="400">
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+         <img src="originals/red-panda.jpg" alt="Red panda" width="1200">
+      </div>
+
+    </main>
+  </body>
 </html>
